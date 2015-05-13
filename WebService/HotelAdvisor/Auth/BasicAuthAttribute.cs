@@ -29,7 +29,10 @@ namespace HotelAdvisor.Auth
 
         protected override void HandleUnauthorizedRequest(HttpActionContext actionContext)
         {
+            actionContext.Response = new HttpResponseMessage(HttpStatusCode.Unauthorized);
+            actionContext.Response.Headers.Add("X-Auth", "401");
             throw new HttpResponseException(HttpStatusCode.Unauthorized);
         }
+
     }
 }

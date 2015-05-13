@@ -34,6 +34,12 @@ namespace HotelAdvisor.Controllers
             return true;
         }
 
+        [HttpGet, BasicAuth]
+        public bool TestAuthGet()
+        {
+            return true;
+        }
+
         [BasicAuth, HttpPost]
         public bool TestAuthWithAuth()
         {
