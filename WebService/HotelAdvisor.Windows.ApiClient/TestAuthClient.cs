@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 
 namespace HotelAdvisor.Windows.ApiClient
 {
@@ -21,6 +22,12 @@ namespace HotelAdvisor.Windows.ApiClient
         {
             string url = _baseUrl + "TestAuthWithAuth";
             return await PostToBool(url, null);
+        }
+
+        public async Task TestGetAuth()
+        {
+            string url = _baseUrl + "TestAuthGet";
+            await GetData<dynamic>(url, null);
         }
     }
 }

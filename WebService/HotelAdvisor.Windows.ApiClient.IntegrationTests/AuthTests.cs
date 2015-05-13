@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 
 namespace HotelAdvisor.Windows.ApiClient.IntegrationTests
@@ -29,5 +30,27 @@ namespace HotelAdvisor.Windows.ApiClient.IntegrationTests
             Assert.IsFalse(result);
         }
 
+        [TestMethod]
+        public async Task TestGetAutnWithValidUser()
+        {
+            var client = ClientResolver.GetTestAuthClient();
+            await client.TestGetAuth();
+        }
+
+        [TestMethod]
+        public async Task TestGetAutnWithInvalidUser()
+        {
+            bool error = false;
+            try
+            {
+                var client = ClientResolver.GetInvalidTestAuthClient();
+                await client.TestGetAuth();
+            }
+            catch (UnauthorizedAccessException)
+            {
+                error = true;
+            }
+            Assert.IsTrue(error);
+        }
     }
 }

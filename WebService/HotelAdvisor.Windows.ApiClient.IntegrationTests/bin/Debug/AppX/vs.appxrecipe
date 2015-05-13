@@ -26,11 +26,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient.IntegrationTests\bin\Debug\HotelAdvisor.Windows.ApiClient.IntegrationTests.dll">
       <PackagePath>HotelAdvisor.Windows.ApiClient.IntegrationTests.dll</PackagePath>
-      <Modified>2015-05-13T18:03:04.589</Modified>
+      <Modified>2015-05-13T18:18:05.163</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient\bin\Debug\HotelAdvisor.Windows.ApiClient.dll">
       <PackagePath>HotelAdvisor.Windows.ApiClient.dll</PackagePath>
-      <Modified>2015-05-13T18:03:04.205</Modified>
+      <Modified>2015-05-13T18:15:00.493</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\bin\Debug\HotelAdvisor.Windows.ApiModels.dll">
       <PackagePath>HotelAdvisor.Windows.ApiModels.dll</PackagePath>
@@ -38,11 +38,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient.IntegrationTests\bin\Debug\HotelAdvisor.Windows.ApiClient.IntegrationTests.pdb">
       <PackagePath>HotelAdvisor.Windows.ApiClient.IntegrationTests.pdb</PackagePath>
-      <Modified>2015-05-13T18:03:04.560</Modified>
+      <Modified>2015-05-13T18:18:05.139</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient\bin\Debug\HotelAdvisor.Windows.ApiClient.pdb">
       <PackagePath>HotelAdvisor.Windows.ApiClient.pdb</PackagePath>
-      <Modified>2015-05-13T18:03:04.176</Modified>
+      <Modified>2015-05-13T18:15:00.470</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\bin\Debug\HotelAdvisor.Windows.ApiModels.pdb">
       <PackagePath>HotelAdvisor.Windows.ApiModels.pdb</PackagePath>
@@ -110,7 +110,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient.IntegrationTests\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-05-13T18:06:30.503</Modified>
+      <Modified>2015-05-13T18:16:29.616</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

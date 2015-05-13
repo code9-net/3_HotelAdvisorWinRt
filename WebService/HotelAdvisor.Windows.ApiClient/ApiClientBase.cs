@@ -106,7 +106,12 @@ namespace HotelAdvisor.Windows.ApiClient
             request.Headers.Add("X-Requested-With", "WinClient");
 
             var response = await _client.SendRequestAsync(request);
-            
+            string responseData = await response.Content.ReadAsStringAsync();
+            // ugly hack
+            if (responseData.Contains("65YbTxyqJUuXWnknSumQQgUtvh7ZgAuECi6j9DIowRfg"))
+            {
+                return false;
+            }
             return response.StatusCode == HttpStatusCode.Ok;
         }
 
@@ -139,7 +144,14 @@ namespace HotelAdvisor.Windows.ApiClient
             var token = Convert.ToBase64String(Encoding.UTF8.GetBytes(String.Format("{0}:{1}", _username, _password)));
             request.Headers.Authorization = new HttpCredentialsHeaderValue("Basic", token);
             request.Headers.Add("X-Requested-With", "WinClient");
-            return await _client.SendRequestAsync(request);
+            var response =  await _client.SendRequestAsync(request);
+            string responseData = await response.Content.ReadAsStringAsync();
+            // ugly hack
+            if (responseData.Contains("65YbTxyqJUuXWnknSumQQgUtvh7ZgAuECi6j9DIowRfg"))
+            {
+                throw new UnauthorizedAccessException();
+            }
+            return response;
         }
         
         private string FormatUrl(string url, object data)
