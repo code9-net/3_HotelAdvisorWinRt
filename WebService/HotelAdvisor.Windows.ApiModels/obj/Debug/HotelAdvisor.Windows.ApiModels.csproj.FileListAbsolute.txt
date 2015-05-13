@@ -1,0 +1,17 @@
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\bin\Debug\HotelAdvisor.Windows.ApiModels.dll
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\bin\Debug\HotelAdvisor.Windows.ApiModels.pdb
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\bin\Debug\HotelAdvisor.Windows.ApiModels.pri
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\HotelAdvisor.Windows.ApiModels.csprojResolveAssemblyReference.cache
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\HotelAdvisor.Windows.ApiModels.dll
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\HotelAdvisor.Windows.ApiModels.pdb
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\priconfig.xml
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\priconfig.xml.intermediate
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\layout.resfiles
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\layout.resfiles.intermediate
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\resources.resfiles
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\resources.resfiles.intermediate
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\pri.resfiles
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\pri.resfiles.intermediate
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\qualifiers.txt
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\qualifiers.txt.intermediate
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\MultipleQualifiersPerDimensionFound.txt

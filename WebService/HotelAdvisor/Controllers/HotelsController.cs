@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Web.Http;
 using HotelAdvisor.Auth;
+using HotelAdvisor.Models;
 
 namespace HotelAdvisor.Controllers
 {
@@ -17,7 +18,7 @@ namespace HotelAdvisor.Controllers
 
         public IHttpActionResult Get(int id)
         {
-            var item = manager.GetHotelDetails(id);
+            HotelDetailsViewModel item = manager.GetHotelDetails(id);
             if (item == null)
             {
                 return NotFound();
