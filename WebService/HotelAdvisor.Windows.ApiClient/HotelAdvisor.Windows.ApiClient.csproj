@@ -46,6 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiClientBase.cs" />
+    <Compile Include="CommentsClient.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="HotelClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

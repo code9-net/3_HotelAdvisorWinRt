@@ -9,7 +9,8 @@ namespace HotelAdvisor.Controllers
     [BasicAuth]
     public class CommentsController : ApiController
     {
-        public Comment Add(Comment item)
+        [HttpPost]
+        public Comment Add([FromBody]Comment item)
         {
             if (item == null)
             {

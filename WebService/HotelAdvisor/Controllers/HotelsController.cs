@@ -11,12 +11,14 @@ namespace HotelAdvisor.Controllers
     {
         Managers.HotelManager manager = new Managers.HotelManager();
 
+        [HttpGet]
         public ICollection<Models.HotelDetailsViewModel> GetAll()
         {
             return manager.GetHotels();
         }
 
-        public IHttpActionResult Get(int id)
+        [HttpGet]
+        public IHttpActionResult Get([FromUri]int id)
         {
             HotelDetailsViewModel item = manager.GetHotelDetails(id);
             if (item == null)
@@ -26,7 +28,8 @@ namespace HotelAdvisor.Controllers
             return Ok(item);
         }
 
-        public Models.Hotel Add(Models.Hotel item)
+        [HttpPost]
+        public Models.Hotel Add([FromBody]Models.Hotel item)
         {
             if (item == null)
             {
@@ -36,12 +39,14 @@ namespace HotelAdvisor.Controllers
             return item;
         }
 
+        [HttpPost]
         public void Remove(int id)
         {
             throw new NotImplementedException();
         }
 
-        public bool Update(Models.Hotel item)
+        [HttpPost]
+        public bool Update([FromBody]Models.Hotel item)
         {
             if (item == null)
             {
