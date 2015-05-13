@@ -1,0 +1,4 @@
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient.IntegrationTests\HotelAdvisor.Windows.ApiClient.IntegrationTests.csproj;neutral
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient\HotelAdvisor.Windows.ApiClient.csproj;neutral
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\HotelAdvisor.Windows.ApiModels.csproj;neutral
+C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\HotelAdvisor.Windows.ApiModels.csproj;neutral

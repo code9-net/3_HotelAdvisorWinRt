@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ASUS</Machine>
+    <WindowsUser>Milan</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>72717f02-b581-4a97-93ce-5a81c60aaaa6</PackageIdentityName>
+    <IntermediateOutputPath>C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient.IntegrationTests\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>A46919C4083D948E4C448DDC7970091175828C02DFB1C22137B7C8EBDA4BDDD8</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>72717f02-b581-4a97-93ce-5a81c60aaaa6_1.0.0.0_neutral__fkmhyfj7wd1ac</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>72717f02-b581-4a97-93ce-5a81c60aaaa6_fkmhyfj7wd1ac!vstest.executionengine.App</RegisteredUserModeAppID>
+    <RegisteredPackageID>72717f02-b581-4a97-93ce-5a81c60aaaa6</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Milan</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient.IntegrationTests\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-05-13T17:12:33.671</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient.IntegrationTests\bin\Debug\HotelAdvisor.Windows.ApiClient.IntegrationTests.dll">
+      <PackagePath>HotelAdvisor.Windows.ApiClient.IntegrationTests.dll</PackagePath>
+      <Modified>2015-05-13T17:27:52.394</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient\bin\Debug\HotelAdvisor.Windows.ApiClient.dll">
+      <PackagePath>HotelAdvisor.Windows.ApiClient.dll</PackagePath>
+      <Modified>2015-05-13T17:27:52.080</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\bin\Debug\HotelAdvisor.Windows.ApiModels.dll">
+      <PackagePath>HotelAdvisor.Windows.ApiModels.dll</PackagePath>
+      <Modified>2015-05-13T17:12:32.285</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient.IntegrationTests\bin\Debug\HotelAdvisor.Windows.ApiClient.IntegrationTests.pdb">
+      <PackagePath>HotelAdvisor.Windows.ApiClient.IntegrationTests.pdb</PackagePath>
+      <Modified>2015-05-13T17:27:52.372</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient\bin\Debug\HotelAdvisor.Windows.ApiClient.pdb">
+      <PackagePath>HotelAdvisor.Windows.ApiClient.pdb</PackagePath>
+      <Modified>2015-05-13T17:27:52.058</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\bin\Debug\HotelAdvisor.Windows.ApiModels.pdb">
+      <PackagePath>HotelAdvisor.Windows.ApiModels.pdb</PackagePath>
+      <Modified>2015-05-13T17:12:32.271</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSTestFramework\11.0\References\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.UnitTestFramework.AppContainer.dll">
+      <PackagePath>Microsoft.VisualStudio.TestPlatform.UnitTestFramework.AppContainer.dll</PackagePath>
+      <Modified>2013-10-05T01:38:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSTestFramework\11.0\References\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.UnitTestFramework.dll">
+      <PackagePath>Microsoft.VisualStudio.TestPlatform.UnitTestFramework.dll</PackagePath>
+      <Modified>2014-10-31T23:46:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient\bin\Debug\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2015-05-13T16:13:24.950</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\TestPlatform\11.0\Redist\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.Core.dll">
+      <PackagePath>Microsoft.VisualStudio.TestPlatform.Core.dll</PackagePath>
+      <Modified>2013-10-05T01:38:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSTestFramework\11.0\Redist\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.Extensions.MSAppContainerAdapter.dll">
+      <PackagePath>Microsoft.VisualStudio.TestPlatform.Extensions.MSAppContainerAdapter.dll</PackagePath>
+      <Modified>2014-10-31T23:46:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\TestPlatform\11.0\Redist\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll">
+      <PackagePath>Microsoft.VisualStudio.TestPlatform.ObjectModel.dll</PackagePath>
+      <Modified>2013-10-05T01:38:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\TestPlatform\11.0\Redist\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.TestExecutor.Core.dll">
+      <PackagePath>Microsoft.VisualStudio.TestPlatform.TestExecutor.Core.dll</PackagePath>
+      <Modified>2013-10-05T01:38:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\TestPlatform\11.0\Redist\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.Utilities.dll">
+      <PackagePath>Microsoft.VisualStudio.TestPlatform.Utilities.dll</PackagePath>
+      <Modified>2014-05-01T00:50:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\TestPlatform\11.0\Redist\CommonConfiguration\neutral\vstest.executionengine.appcontainer.exe">
+      <PackagePath>vstest.executionengine.appcontainer.exe</PackagePath>
+      <Modified>2014-07-23T01:27:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\TestPlatform\11.0\Redist\CommonConfiguration\neutral\vstest.executionengine.appcontainer.x86.exe">
+      <PackagePath>vstest.executionengine.appcontainer.x86.exe</PackagePath>
+      <Modified>2014-07-23T01:27:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient.IntegrationTests\Images\UnitTestLogo.scale-100.png">
+      <PackagePath>Images\UnitTestLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T05:01:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient.IntegrationTests\Images\UnitTestSmallLogo.scale-100.png">
+      <PackagePath>Images\UnitTestSmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T05:01:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient.IntegrationTests\Images\UnitTestSplashScreen.scale-100.png">
+      <PackagePath>Images\UnitTestSplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T05:01:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient.IntegrationTests\Images\UnitTestStoreLogo.scale-100.png">
+      <PackagePath>Images\UnitTestStoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T05:01:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiClient.IntegrationTests\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-05-13T17:43:19.324</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

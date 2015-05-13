@@ -101,7 +101,8 @@ namespace HotelAdvisor.Windows.ApiClient
                 }
             }
             request.Headers.Accept.Add(new HttpMediaTypeWithQualityHeaderValue("application/json"));
-
+            var token = Convert.ToBase64String(Encoding.UTF8.GetBytes(String.Format("{0}:{1}", _username, _password)));
+            request.Headers.Authorization = new HttpCredentialsHeaderValue("Basic", token);
             var response = await _client.SendRequestAsync(request);
             return response.StatusCode == HttpStatusCode.Ok;
         }

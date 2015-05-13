@@ -16,7 +16,7 @@ namespace HotelAdvisor.Controllers
             {
                 throw new ArgumentNullException("item");
             }
-            item.User = BasicAuthUser.GetCurrent(new HotelAdvisorContext());
+            item.User = BasicAuthUser.GetCurrent();
             item.UserId = item.User.Id;
             CommentManager manager = new CommentManager();
             manager.Create(item);

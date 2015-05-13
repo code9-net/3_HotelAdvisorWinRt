@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using HotelAdvisor.Models;
-using Microsoft.AspNet.Identity.EntityFramework;
+﻿using HotelAdvisor.Models;
 
 namespace HotelAdvisor.Auth
 {
     public static class BasicAuthUser
     {
-        public static ApplicationUser GetCurrent(IdentityDbContext<ApplicationUser> dbContext)
+        public static ApplicationUser GetCurrent()
         {
-            return null;
+            return BasicAuthHelper.GetApplicationUser();
         }
     }
 }

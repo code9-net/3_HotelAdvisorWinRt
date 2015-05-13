@@ -1,9 +1,5 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
+﻿using System.Data.Entity;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace HotelAdvisor.Models
 {
@@ -21,5 +17,7 @@ namespace HotelAdvisor.Models
         public DbSet<Hotel> Hotels { get; set; }
 
         public DbSet<Comment> Comments { get; set; }
+
+        public DbSet<TestLog> TestLogs { get; set; }
     }
 }

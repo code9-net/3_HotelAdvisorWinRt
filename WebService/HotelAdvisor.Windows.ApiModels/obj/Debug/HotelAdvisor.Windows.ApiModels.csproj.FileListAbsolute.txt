@@ -1,7 +1,6 @@
 C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\bin\Debug\HotelAdvisor.Windows.ApiModels.dll
 C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\bin\Debug\HotelAdvisor.Windows.ApiModels.pdb
 C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\bin\Debug\HotelAdvisor.Windows.ApiModels.pri
-C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\HotelAdvisor.Windows.ApiModels.csprojResolveAssemblyReference.cache
 C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\HotelAdvisor.Windows.ApiModels.dll
 C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\HotelAdvisor.Windows.ApiModels.pdb
 C:\L9\3_HotelAdvisorWinRt\WebService\HotelAdvisor.Windows.ApiModels\obj\Debug\priconfig.xml
