@@ -1,17 +1,23 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using System.Web.Http;
+using HotelAdvisor.Auth;
+using HotelAdvisor.Managers;
+using HotelAdvisor.Models;
 
 namespace HotelAdvisor.Controllers
 {
+    [BasicAuth]
     public class CommentsController : ApiController
     {
-        public Models.Comment Add(Models.Comment item)
+        public Comment Add(Comment item)
         {
             if (item == null)
             {
-                throw new System.ArgumentNullException("item");
+                throw new ArgumentNullException("item");
             }
-            Managers.CommentManager manager = new Managers.CommentManager();
+            item.User = BasicAuthUser.GetCurrent(new HotelAdvisorContext());
+            item.UserId = item.User.Id;
+            CommentManager manager = new CommentManager();
             manager.Create(item);
             return item;
         }

@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web.Http;
+using HotelAdvisor.Auth;
 
 namespace HotelAdvisor.Controllers
 {
+    [BasicAuth]
     public class HotelsController : ApiController
     {
         Managers.HotelManager manager = new Managers.HotelManager();
