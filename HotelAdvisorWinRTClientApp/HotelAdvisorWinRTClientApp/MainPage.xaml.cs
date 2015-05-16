@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelAdvisorWinRTClientApp.Common;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +26,28 @@ namespace HotelAdvisorWinRTClientApp
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void ToastTemplate01_Click(object sender, RoutedEventArgs e)
+        {
+            // 
+            var toastText = @"Toast Toast Text 01 template. The text will be wrapped three lines.";
+            NotificationHelper.SendSingleTextToastNotification(toastText);
+        }
+
+        private void ToastTemplate02_Click(object sender, RoutedEventArgs e)
+        {
+            var toastTitle = "This is bold text";
+            var toastText = @"Toast Toast Text 02 template. The text will be wrapped two lines.";
+            NotificationHelper.SentTextWithTitle(toastTitle, toastText);
+        }
+
+        private void ToastTemplate03_Click(object sender, RoutedEventArgs e)
+        {
+            var imageUri = @"ms-appx:///assets/ToastImages/Logo Levi9 93x75.jpg";
+            var toastTitle = "This is bold text";
+            var toastText = @"Toast Toast Text 02 template. The text will be wrapped two lines.";
+            NotificationHelper.SentImageAndTextWithTitle(toastTitle, toastText, imageUri);
         }
     }
 }

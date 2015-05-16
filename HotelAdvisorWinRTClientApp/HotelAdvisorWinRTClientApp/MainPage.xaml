@@ -8,6 +8,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="ToastTemplate01" Click="ToastTemplate01_Click">Toast Template 01.</Button>
+            <Button x:Name="ToastTemplate02" Click="ToastTemplate02_Click">Toast Template 02.</Button>
+            <Button x:Name="ToastTemplate03" Click="ToastTemplate03_Click">Toast Template 03.</Button>
+        </StackPanel>        
     </Grid>
 </Page>
