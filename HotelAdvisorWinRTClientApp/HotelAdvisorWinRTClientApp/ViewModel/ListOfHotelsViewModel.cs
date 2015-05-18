@@ -3,16 +3,21 @@ using GalaSoft.MvvmLight.Command;
 using HotelAdvisorWinRTClientApp.Common;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
+using HotelAdvisor.Windows.ApiClient;
+using HotelAdvisor.Windows.ApiModels;
 
 namespace HotelAdvisorWinRTClientApp.ViewModel
 {
     public class ListOfHotelsViewModel : ViewModelBase
     {
+        private const string Username = "admin@admin.com";
+        private const string Password = "Admin@123";
+
         private string title;
-        private ObservableCollection<string> hotels;
+        private ObservableCollection<HotelDetailsViewModel> hotels;
         private ICommand dislikeHotelCommand;
         private ICommand likeHotelCommand;
-
+        private HotelClient hotelClient;
         /// <summary>
         /// Gets or sets the title.
         /// </summary>
@@ -28,7 +33,7 @@ namespace HotelAdvisorWinRTClientApp.ViewModel
         /// <summary>
         /// The hotels
         /// </summary>
-        public ObservableCollection<string> Hotels
+        public ObservableCollection<HotelDetailsViewModel> Hotels
         {
             get { return hotels; }
             set { Set(() => Hotels, ref hotels, value); }
@@ -77,18 +82,40 @@ namespace HotelAdvisorWinRTClientApp.ViewModel
         public ListOfHotelsViewModel()
         {
             Title = "List Of Hotels";
+            hotelClient = new HotelClient(Username, Password);
 
             if (IsInDesignMode)
             {
-                Hotels = new ObservableCollection<string>() { "Hotel1", "Hotel2", "Hotel3", "Hotel4", "Hotel5" };
+                Hotels = new ObservableCollection<HotelDetailsViewModel>() 
+                { 
+                    new HotelDetailsViewModel(){City="Novi Sad", HouseNumber=1,HotelId=1,HotelName="Hotel1", Image=@"ms-appx:///assets/StoreLogo.scale-100.png",Description="Ovaj hotel je hotel koji je hotel da bi bio hotel test test test"},
+                    new HotelDetailsViewModel(){City="Ruma", HouseNumber=12,HotelId=2,HotelName="Hotel2",Image=@"ms-appx:///assets/StoreLogo.scale-100.png",Description="Ovaj hotel je hotel koji je hotel da bi bio hotel test test test"},
+                    new HotelDetailsViewModel(){City="Zrenjanin", HouseNumber=23,HotelId=3,HotelName="Hotel3",Image=@"ms-appx:///assets/StoreLogo.scale-100.png",Description="Ovaj hotel je hotel koji je hotel da bi bio hotel test test test"},
+                    new HotelDetailsViewModel(){City="Subotica", HouseNumber=44,HotelId=4,HotelName="Hotel4",Image=@"ms-appx:///assets/StoreLogo.scale-100.png",Description="Ovaj hotel je hotel koji je hotel da bi bio hotel test test test"}
+                };
             }
             else
-            {
-                Hotels = new ObservableCollection<string>();
+            {                
+                Hotels = new ObservableCollection<HotelDetailsViewModel>();
             }
+
+            LoadHotels();
 
             likeHotelCommand = new RelayCommand(LikeHotel, IsHotelSelected);
             dislikeHotelCommand = new RelayCommand(DislikeHotel, IsHotelSelected);
+        }
+
+        /// <summary>
+        /// Loads the hotels.
+        /// </summary>
+        private async void   LoadHotels()
+        {
+            var listOfHotels = await hotelClient.GetAll();
+            foreach (var h in listOfHotels)
+            {
+                h.Image = @"http://code9-2015-api.azurewebsites.net" + h.Image;
+            }
+            Hotels = new ObservableCollection<HotelDetailsViewModel>(listOfHotels);
         }
 
         /// <summary>

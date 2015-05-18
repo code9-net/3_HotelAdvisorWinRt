@@ -158,6 +158,16 @@
       <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WebService\HotelAdvisor.Windows.ApiClient\HotelAdvisor.Windows.ApiClient.csproj">
+      <Project>{7de07613-9903-436f-af04-fbcdb9aea2fd}</Project>
+      <Name>HotelAdvisor.Windows.ApiClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WebService\HotelAdvisor.Windows.ApiModels\HotelAdvisor.Windows.ApiModels.csproj">
+      <Project>{19d014ab-a9b3-41ef-86c6-23dd32428565}</Project>
+      <Name>HotelAdvisor.Windows.ApiModels</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

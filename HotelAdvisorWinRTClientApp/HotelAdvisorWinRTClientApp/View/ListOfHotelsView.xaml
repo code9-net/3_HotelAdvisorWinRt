@@ -24,7 +24,21 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
-                        <TextBlock Margin="10,0,20,0" Text="{Binding}" Style="{StaticResource HeaderTextBlockStyle}"></TextBlock>                       
+                        <Grid >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="300"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Image Grid.Column="0" Grid.RowSpan="3" Source="{Binding Image}"/>
+                            <TextBlock Grid.Row="0" Grid.Column="1" Margin="10,0,20,0" Text="{Binding HotelName}" Style="{StaticResource HeaderTextBlockStyle}"/>
+                            <TextBlock Grid.Row="1" Grid.Column="1" Margin="10,0,20,0" Text="{Binding City}" Style="{StaticResource SubheaderTextBlockStyle}"/>
+                            <TextBlock Grid.Row="2" Grid.Column="1" Margin="10,0,20,0" Text="{Binding Description}" Style="{StaticResource BaseTextBlockStyle}"/>
+                        </Grid>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
