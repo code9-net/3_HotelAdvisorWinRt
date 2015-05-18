@@ -14,4 +14,9 @@
             <Button x:Name="ToastTemplate03" Click="ToastTemplate03_Click">Toast Template 03.</Button>
         </StackPanel>        
     </Grid>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton Label="List of hotels" Icon="Home" Click="AppBarButton_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
 </Page>

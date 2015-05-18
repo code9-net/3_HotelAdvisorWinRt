@@ -1,4 +1,5 @@
 ﻿using HotelAdvisorWinRTClientApp.Common;
+using HotelAdvisorWinRTClientApp.View;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -48,6 +49,11 @@ namespace HotelAdvisorWinRTClientApp
             var toastTitle = "This is bold text";
             var toastText = @"Toast Toast Text 02 template. The text will be wrapped two lines.";
             NotificationHelper.SentImageAndTextWithTitle(toastTitle, toastText, imageUri);
+        }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ListOfHotelsView));
         }
     }
 }
