@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiClientBase.cs" />
+    <Compile Include="AuthClient.cs" />
     <Compile Include="CommentsClient.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="HotelClient.cs" />

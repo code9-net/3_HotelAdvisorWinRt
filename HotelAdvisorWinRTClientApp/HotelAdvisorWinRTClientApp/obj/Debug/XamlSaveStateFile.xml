@@ -1,11 +1,11 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="d:\m.stanacev\github\code9\hoteladvisorwinrtclientapp\hoteladvisorwinrtclientapp\obj\debug\intermediatexaml\hoteladvisorwinrtclientapp.exe" HashGuid="c3fb34b2-1f2d-9f4f-3939-0c566a4c4ce3" />
+    <LocalAssembly PathName="d:\m.stanacev\github\code9\hoteladvisorwinrtclientapp\hoteladvisorwinrtclientapp\obj\debug\intermediatexaml\hoteladvisorwinrtclientapp.exe" HashGuid="773d9ed4-5a1f-0f9f-f416-76e3401fa551" />
     <ReferenceAssembly PathName="d:\m.stanacev\github\code9\hoteladvisorwinrtclientapp\libs\mvvmlight\_for_hoteladv\galasoft.mvvmlight.dll" HashGuid="d702f8e6-9904-1220-8de7-be8614bf93e8" />
     <ReferenceAssembly PathName="d:\m.stanacev\github\code9\hoteladvisorwinrtclientapp\libs\mvvmlight\_for_hoteladv\galasoft.mvvmlight.extras.dll" HashGuid="f59e2cac-89a1-06f4-bbe7-18857251ef78" />
     <ReferenceAssembly PathName="d:\m.stanacev\github\code9\hoteladvisorwinrtclientapp\libs\mvvmlight\_for_hoteladv\galasoft.mvvmlight.platform.dll" HashGuid="27c4f135-c15f-18a2-cb9f-847748d33bdb" />
-    <ReferenceAssembly PathName="d:\m.stanacev\github\code9\hoteladvisorwinrtclientapp\libs\hoteladvisor\hoteladvisor.windows.apiclient.dll" HashGuid="22ab1c83-6dfb-13ee-4730-a1a49353e134" />
-    <ReferenceAssembly PathName="d:\m.stanacev\github\code9\hoteladvisorwinrtclientapp\libs\hoteladvisor\hoteladvisor.windows.apimodels.dll" HashGuid="dc3dfc7b-b6fb-feb4-3f91-84e6be681d28" />
+    <ReferenceAssembly PathName="d:\m.stanacev\github\code9\hoteladvisorwinrtclientapp\libs\hoteladvisor\hoteladvisor.windows.apiclient.dll" HashGuid="85157738-64c7-8cb2-9291-ef4b75cd16c0" />
+    <ReferenceAssembly PathName="d:\m.stanacev\github\code9\hoteladvisorwinrtclientapp\libs\hoteladvisor\hoteladvisor.windows.apimodels.dll" HashGuid="a7378e0e-c640-e4f5-ceeb-aa94bc992568" />
     <ReferenceAssembly PathName="d:\m.stanacev\github\code9\hoteladvisorwinrtclientapp\libs\mvvmlight\_for_hoteladv\microsoft.practices.servicelocation.dll" HashGuid="89de7f80-26d8-a17c-5ad9-b855f81ea5b2" />
     <ReferenceAssembly PathName="d:\m.stanacev\github\code9\hoteladvisorwinrtclientapp\libs\hoteladvisor\newtonsoft.json.dll" HashGuid="225745d8-3693-ad6f-ebd5-8845d81f8e0f" />
   </ReferenceAssemblyList>

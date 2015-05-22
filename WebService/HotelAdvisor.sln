@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelAdvisor.Windows.ApiMod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelAdvisor.Windows.ApiClient.IntegrationTests", "HotelAdvisor.Windows.ApiClient.IntegrationTests\HotelAdvisor.Windows.ApiClient.IntegrationTests.csproj", "{C458391D-72CA-41AC-A9C0-03A8DC1F94C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelAdvisorWinRTClientApp", "..\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp.csproj", "{58F17863-92A5-4149-BFE8-ED108AA91822}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OLD_HotelAdvisorWinRTClientApp", "..\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\OLD_HotelAdvisorWinRTClientApp.csproj", "{58F17863-92A5-4149-BFE8-ED108AA91822}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A5DF456C-4E02-49B1-9AD8-EB1C0062761D}"
 	ProjectSection(SolutionItems) = preProject

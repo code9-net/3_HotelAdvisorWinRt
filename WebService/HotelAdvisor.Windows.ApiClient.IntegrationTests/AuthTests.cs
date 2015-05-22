@@ -52,5 +52,25 @@ namespace HotelAdvisor.Windows.ApiClient.IntegrationTests
             }
             Assert.IsTrue(error);
         }
+
+        [TestMethod]
+        public async Task TestRegisteredUser()
+        {
+            string username = "test@test.com";
+            string password = "Password.1";
+            var client = new AuthClient(username, password);
+            bool loginResult = await client.Login();
+            Assert.IsTrue(loginResult);
+        }
+
+        [TestMethod]
+        public async Task TestNotRegisteredUser()
+        {
+            string username = Guid.NewGuid().ToString("N");
+            string password = Guid.NewGuid().ToString("N");
+            var client = new AuthClient(username, password);
+            bool loginResult = await client.Login();
+            Assert.IsFalse(loginResult);
+        }
     }
 }
