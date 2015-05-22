@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>LEVI9SERBIA24</Machine>
+    <WindowsUser>m.stanacev</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>9e7abae1-a4be-4bc1-8ce9-2de7281dcbd1</PackageIdentityName>
+    <IntermediateOutputPath>D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\bin\Debug\HotelAdvisorWinRTClientApp.exe">
+      <PackagePath>HotelAdvisorWinRTClientApp.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\libs\mvvmlight\_for_hoteladv\GalaSoft.MvvmLight.dll">
+      <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\libs\mvvmlight\_for_hoteladv\GalaSoft.MvvmLight.Extras.dll">
+      <PackagePath>GalaSoft.MvvmLight.Extras.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\libs\mvvmlight\_for_hoteladv\GalaSoft.MvvmLight.Platform.dll">
+      <PackagePath>GalaSoft.MvvmLight.Platform.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\libs\hoteladvisor\HotelAdvisor.Windows.ApiClient.dll">
+      <PackagePath>HotelAdvisor.Windows.ApiClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\libs\hoteladvisor\HotelAdvisor.Windows.ApiModels.dll">
+      <PackagePath>HotelAdvisor.Windows.ApiModels.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\libs\mvvmlight\_for_hoteladv\Microsoft.Practices.ServiceLocation.dll">
+      <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\libs\hoteladvisor\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\Assets\ToastImages\Logo Levi9 93x75.jpg">
+      <PackagePath>Assets\ToastImages\Logo Levi9 93x75.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\bin\Debug\View\ListOfHotelsView.xbf">
+      <PackagePath>View\ListOfHotelsView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\bin\Debug\HotelAdvisorWinRTClientApp.xr.xml">
+      <PackagePath>HotelAdvisorWinRTClientApp.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
