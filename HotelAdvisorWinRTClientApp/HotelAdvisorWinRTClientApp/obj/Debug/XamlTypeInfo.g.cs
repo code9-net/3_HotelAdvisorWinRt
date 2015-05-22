@@ -124,29 +124,31 @@ namespace HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[10];
+            _typeNameTable = new string[11];
             _typeNameTable[0] = "HotelAdvisorWinRTClientApp.ViewModel.ViewModelLocator";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "HotelAdvisorWinRTClientApp.ViewModel.ListOfHotelsViewModel";
             _typeNameTable[3] = "GalaSoft.MvvmLight.ViewModelBase";
             _typeNameTable[4] = "GalaSoft.MvvmLight.ObservableObject";
-            _typeNameTable[5] = "HotelAdvisorWinRTClientApp.LoginPage";
-            _typeNameTable[6] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[7] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[8] = "HotelAdvisorWinRTClientApp.MainPage";
-            _typeNameTable[9] = "HotelAdvisorWinRTClientApp.View.ListOfHotelsView";
+            _typeNameTable[5] = "HotelAdvisorWinRTClientApp.ViewModel.LoginViewModel";
+            _typeNameTable[6] = "HotelAdvisorWinRTClientApp.LoginPage";
+            _typeNameTable[7] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[8] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[9] = "HotelAdvisorWinRTClientApp.MainPage";
+            _typeNameTable[10] = "HotelAdvisorWinRTClientApp.View.ListOfHotelsView";
 
-            _typeTable = new global::System.Type[10];
+            _typeTable = new global::System.Type[11];
             _typeTable[0] = typeof(global::HotelAdvisorWinRTClientApp.ViewModel.ViewModelLocator);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::HotelAdvisorWinRTClientApp.ViewModel.ListOfHotelsViewModel);
             _typeTable[3] = typeof(global::GalaSoft.MvvmLight.ViewModelBase);
             _typeTable[4] = typeof(global::GalaSoft.MvvmLight.ObservableObject);
-            _typeTable[5] = typeof(global::HotelAdvisorWinRTClientApp.LoginPage);
-            _typeTable[6] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[8] = typeof(global::HotelAdvisorWinRTClientApp.MainPage);
-            _typeTable[9] = typeof(global::HotelAdvisorWinRTClientApp.View.ListOfHotelsView);
+            _typeTable[5] = typeof(global::HotelAdvisorWinRTClientApp.ViewModel.LoginViewModel);
+            _typeTable[6] = typeof(global::HotelAdvisorWinRTClientApp.LoginPage);
+            _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[9] = typeof(global::HotelAdvisorWinRTClientApp.MainPage);
+            _typeTable[10] = typeof(global::HotelAdvisorWinRTClientApp.View.ListOfHotelsView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -184,9 +186,9 @@ namespace HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo
         private object Activate_0_ViewModelLocator() { return new global::HotelAdvisorWinRTClientApp.ViewModel.ViewModelLocator(); }
         private object Activate_2_ListOfHotelsViewModel() { return new global::HotelAdvisorWinRTClientApp.ViewModel.ListOfHotelsViewModel(); }
         private object Activate_4_ObservableObject() { return new global::GalaSoft.MvvmLight.ObservableObject(); }
-        private object Activate_5_LoginPage() { return new global::HotelAdvisorWinRTClientApp.LoginPage(); }
-        private object Activate_8_MainPage() { return new global::HotelAdvisorWinRTClientApp.MainPage(); }
-        private object Activate_9_ListOfHotelsView() { return new global::HotelAdvisorWinRTClientApp.View.ListOfHotelsView(); }
+        private object Activate_6_LoginPage() { return new global::HotelAdvisorWinRTClientApp.LoginPage(); }
+        private object Activate_9_MainPage() { return new global::HotelAdvisorWinRTClientApp.MainPage(); }
+        private object Activate_10_ListOfHotelsView() { return new global::HotelAdvisorWinRTClientApp.View.ListOfHotelsView(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -202,6 +204,7 @@ namespace HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo
                 userType = new global::HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_0_ViewModelLocator;
                 userType.AddMemberName("ListOfHotelsView");
+                userType.AddMemberName("Login");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -228,31 +231,38 @@ namespace HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 5:   //  HotelAdvisorWinRTClientApp.LoginPage
-                userType = new global::HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_LoginPage;
+            case 5:   //  HotelAdvisorWinRTClientApp.ViewModel.LoginViewModel
+                userType = new global::HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("GalaSoft.MvvmLight.ViewModelBase"));
+                userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 7:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 8:   //  HotelAdvisorWinRTClientApp.MainPage
+            case 6:   //  HotelAdvisorWinRTClientApp.LoginPage
                 userType = new global::HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_MainPage;
+                userType.Activator = Activate_6_LoginPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  HotelAdvisorWinRTClientApp.View.ListOfHotelsView
+            case 7:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 8:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 9:   //  HotelAdvisorWinRTClientApp.MainPage
                 userType = new global::HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_ListOfHotelsView;
+                userType.Activator = Activate_9_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  HotelAdvisorWinRTClientApp.View.ListOfHotelsView
+                userType = new global::HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_10_ListOfHotelsView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -266,6 +276,11 @@ namespace HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo
             var that = (global::HotelAdvisorWinRTClientApp.ViewModel.ViewModelLocator)instance;
             return that.ListOfHotelsView;
         }
+        private object get_1_ViewModelLocator_Login(object instance)
+        {
+            var that = (global::HotelAdvisorWinRTClientApp.ViewModel.ViewModelLocator)instance;
+            return that.Login;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -278,6 +293,12 @@ namespace HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo
                 userType = (global::HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HotelAdvisorWinRTClientApp.ViewModel.ViewModelLocator");
                 xamlMember = new global::HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo.XamlMember(this, "ListOfHotelsView", "HotelAdvisorWinRTClientApp.ViewModel.ListOfHotelsViewModel");
                 xamlMember.Getter = get_0_ViewModelLocator_ListOfHotelsView;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "HotelAdvisorWinRTClientApp.ViewModel.ViewModelLocator.Login":
+                userType = (global::HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HotelAdvisorWinRTClientApp.ViewModel.ViewModelLocator");
+                xamlMember = new global::HotelAdvisorWinRTClientApp.HotelAdvisorWinRTClientApp_XamlTypeInfo.XamlMember(this, "Login", "HotelAdvisorWinRTClientApp.ViewModel.LoginViewModel");
+                xamlMember.Getter = get_1_ViewModelLocator_Login;
                 xamlMember.SetIsReadOnly();
                 break;
             }

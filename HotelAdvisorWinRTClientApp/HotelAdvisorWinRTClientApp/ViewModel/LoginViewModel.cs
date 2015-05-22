@@ -8,11 +8,20 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using HotelAdvisor.Windows.ApiClient;
 using Windows.UI.Popups;
+using HotelAdvisorWinRTClientApp.Services;
+using HotelAdvisorWinRTClientApp.View;
 
 namespace HotelAdvisorWinRTClientApp.ViewModel
 {
     public class LoginViewModel : ViewModelBase
     {
+        private readonly INavigationService _navigationService;
+
+        public LoginViewModel(INavigationService navService)
+        {
+            _navigationService = navService;
+        }
+
         private string _username;
 
         public string Username
@@ -51,7 +60,8 @@ namespace HotelAdvisorWinRTClientApp.ViewModel
                     var client = new AuthClient(Username, Password);
                     if (await client.Login())
                     {
-                        // todo: redirect
+                        Services.WebClients.SetUsernameAndPassword(Username, Password);
+                        _navigationService.Navigate(typeof(ListOfHotelsView));
                     }
                     else
                     {

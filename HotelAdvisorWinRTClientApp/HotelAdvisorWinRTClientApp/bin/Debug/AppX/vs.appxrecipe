@@ -20,13 +20,13 @@
     <AppXManifest Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-05-22T14:15:24.511</Modified>
+      <Modified>2015-05-22T15:27:10.626</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\bin\Debug\HotelAdvisorWinRTClientApp.exe">
       <PackagePath>HotelAdvisorWinRTClientApp.exe</PackagePath>
-      <Modified>2015-05-22T14:15:23.683</Modified>
+      <Modified>2015-05-22T15:27:10.367</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\libs\mvvmlight\_for_hoteladv\GalaSoft.MvvmLight.dll">
       <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
@@ -42,11 +42,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\libs\hoteladvisor\HotelAdvisor.Windows.ApiClient.dll">
       <PackagePath>HotelAdvisor.Windows.ApiClient.dll</PackagePath>
-      <Modified>2015-05-22T14:10:01.926</Modified>
+      <Modified>2015-05-22T14:46:59.210</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\libs\hoteladvisor\HotelAdvisor.Windows.ApiModels.dll">
       <PackagePath>HotelAdvisor.Windows.ApiModels.dll</PackagePath>
-      <Modified>2015-05-22T14:10:01.023</Modified>
+      <Modified>2015-05-22T14:24:59.043</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\libs\mvvmlight\_for_hoteladv\Microsoft.Practices.ServiceLocation.dll">
       <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
@@ -82,23 +82,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-05-22T14:15:23.372</Modified>
+      <Modified>2015-05-22T14:59:06.482</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\bin\Debug\LoginPage.xbf">
+      <PackagePath>LoginPage.xbf</PackagePath>
+      <Modified>2015-05-22T15:27:10.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-05-22T14:15:23.372</Modified>
+      <Modified>2015-05-22T14:59:06.483</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\bin\Debug\View\ListOfHotelsView.xbf">
       <PackagePath>View\ListOfHotelsView.xbf</PackagePath>
-      <Modified>2015-05-22T14:15:23.373</Modified>
+      <Modified>2015-05-22T14:59:06.483</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\bin\Debug\HotelAdvisorWinRTClientApp.xr.xml">
       <PackagePath>HotelAdvisorWinRTClientApp.xr.xml</PackagePath>
-      <Modified>2015-05-22T14:15:23.264</Modified>
+      <Modified>2015-05-22T15:21:41.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-05-22T14:15:24.244</Modified>
+      <Modified>2015-05-22T15:27:10.465</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

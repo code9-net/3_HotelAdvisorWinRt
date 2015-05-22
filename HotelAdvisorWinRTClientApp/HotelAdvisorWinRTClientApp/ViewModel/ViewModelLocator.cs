@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Ioc;
+using HotelAdvisorWinRTClientApp.Services;
 using Microsoft.Practices.ServiceLocation;
 
 namespace HotelAdvisorWinRTClientApp.ViewModel
@@ -22,6 +23,14 @@ namespace HotelAdvisorWinRTClientApp.ViewModel
             }
         }
 
+        public LoginViewModel Login
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<LoginViewModel>();
+            }
+        }
+
         /// <summary>
         /// Initializes the <see cref="ViewModelLocator"/> class.
         /// </summary>
@@ -29,6 +38,10 @@ namespace HotelAdvisorWinRTClientApp.ViewModel
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
             SimpleIoc.Default.Register<ListOfHotelsViewModel>();
+            SimpleIoc.Default.Register<LoginViewModel>(() =>
+                {
+                    return new LoginViewModel(new NavigationService());
+                });
         }
     }
 }

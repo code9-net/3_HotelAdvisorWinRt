@@ -52,14 +52,6 @@ D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp
 D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\obj\Debug\HotelAdvisorWinRTClientApp.pdb
 D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\obj\Debug\Microsoft.Practices.ServiceLocation\en-US\Microsoft.Practices.ServiceLocation.Properties.Resources.resw
 D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\obj\Debug\HotelAdvisorWinRTClientApp.csproj.GenerateResource.Cache
-D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\obj\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles
-D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\obj\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles.intermediate
-D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\obj\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles
-D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\obj\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles.intermediate
-D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\obj\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles
-D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\obj\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles.intermediate
-D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\obj\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml
-D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\obj\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml.intermediate
 D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\obj\Debug\Microsoft.Practices.ServiceLocation.pri
 D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\obj\Debug\Microsoft.Practices.ServiceLocation\qualifiers.txt
 D:\m.stanacev\Github\Code9\HotelAdvisorWinRTClientApp\HotelAdvisorWinRTClientApp\obj\Debug\priconfig.xml
