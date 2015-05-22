@@ -5,13 +5,12 @@ using System.Collections.ObjectModel;
 using System.Windows.Input;
 using HotelAdvisor.Windows.ApiClient;
 using HotelAdvisor.Windows.ApiModels;
+using HotelAdvisorWinRTClientApp.Services;
 
 namespace HotelAdvisorWinRTClientApp.ViewModel
 {
     public class ListOfHotelsViewModel : ViewModelBase
     {
-        private const string Username = "admin@admin.com";
-        private const string Password = "Admin@123";
 
         private string title;
         private ObservableCollection<HotelDetailsViewModel> hotels;
@@ -82,7 +81,7 @@ namespace HotelAdvisorWinRTClientApp.ViewModel
         public ListOfHotelsViewModel()
         {
             Title = "List Of Hotels";
-            hotelClient = new HotelClient(Username, Password);
+            hotelClient = WebClients.HotelClient;
 
             if (IsInDesignMode)
             {
@@ -95,7 +94,7 @@ namespace HotelAdvisorWinRTClientApp.ViewModel
                 };
             }
             else
-            {                
+            {
                 Hotels = new ObservableCollection<HotelDetailsViewModel>();
             }
 
@@ -108,7 +107,7 @@ namespace HotelAdvisorWinRTClientApp.ViewModel
         /// <summary>
         /// Loads the hotels.
         /// </summary>
-        private async void   LoadHotels()
+        private async void LoadHotels()
         {
             var listOfHotels = await hotelClient.GetAll();
             foreach (var h in listOfHotels)

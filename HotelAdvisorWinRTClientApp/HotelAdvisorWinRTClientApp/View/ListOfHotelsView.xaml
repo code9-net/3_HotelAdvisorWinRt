@@ -5,6 +5,7 @@
     xmlns:local="using:HotelAdvisorWinRTClientApp.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:cnt="using:HotelAdvisorWinRTClientApp.Components"
     mc:Ignorable="d"
     DataContext="{Binding ListOfHotelsView, Source={StaticResource Locator}}">
 
@@ -33,11 +34,17 @@
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
-                            <Image Grid.Column="0" Grid.RowSpan="3" Source="{Binding Image}"/>
+                            <Image Grid.Column="0" Grid.RowSpan="4" Source="{Binding Image}"/>
                             <TextBlock Grid.Row="0" Grid.Column="1" Margin="10,0,20,0" Text="{Binding HotelName}" Style="{StaticResource HeaderTextBlockStyle}"/>
                             <TextBlock Grid.Row="1" Grid.Column="1" Margin="10,0,20,0" Text="{Binding City}" Style="{StaticResource SubheaderTextBlockStyle}"/>
                             <TextBlock Grid.Row="2" Grid.Column="1" Margin="10,0,20,0" Text="{Binding Description}" Style="{StaticResource BaseTextBlockStyle}"/>
+                            <cnt:RatingControl Grid.Row="3" Grid.Column="1" NumberOfStars="5" Value="7.7"
+                                                HorizontalAlignment="Left"
+                                                StarForegroundColor="Yellow"
+                                                StarOutlineColor="Transparent"
+                                                VerticalAlignment="Center"/>
                         </Grid>
                     </StackPanel>
                 </DataTemplate>

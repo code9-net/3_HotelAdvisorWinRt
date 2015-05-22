@@ -31,7 +31,7 @@ namespace HotelAdvisorWinRTClientApp.Services
         {
             get
             {
-                return new HotelAdvisor.Windows.ApiClient.CommentsClient(_username, _username);
+                return new HotelAdvisor.Windows.ApiClient.CommentsClient(_username, _password);
             }
         }
 
@@ -39,7 +39,7 @@ namespace HotelAdvisorWinRTClientApp.Services
         {
             get
             {
-                return new HotelAdvisor.Windows.ApiClient.HotelClient(_username, _username);
+                return new HotelAdvisor.Windows.ApiClient.HotelClient(_username, _password);
             }
         }
     }
