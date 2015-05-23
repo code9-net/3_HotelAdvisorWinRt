@@ -16,6 +16,8 @@ namespace HotelAdvisorWinRTClientApp.ViewModel
         private ObservableCollection<HotelDetailsViewModel> hotels;
         private ICommand dislikeHotelCommand;
         private ICommand likeHotelCommand;
+        private ICommand changeTitle;
+
         private HotelClient hotelClient;
         /// <summary>
         /// Gets or sets the title.
@@ -75,6 +77,19 @@ namespace HotelAdvisorWinRTClientApp.ViewModel
                 likeHotelCommand = value;
             }
         }
+
+        public ICommand ChangeTitle
+        {
+            get 
+            {
+                return changeTitle;
+            }
+
+            set 
+            {
+                changeTitle = value;
+            }
+        }
         /// <summary>
         /// Initializes a new instance of the <see cref="ListOfHotelsViewModel" /> class.
         /// </summary>
@@ -100,8 +115,14 @@ namespace HotelAdvisorWinRTClientApp.ViewModel
 
             LoadHotels();
 
-            likeHotelCommand = new RelayCommand(LikeHotel, IsHotelSelected);
+            likeHotelCommand = new RelayCommand(LikeHotel);
             dislikeHotelCommand = new RelayCommand(DislikeHotel, IsHotelSelected);
+            changeTitle = new RelayCommand(ChangeTitleCommand);
+        }
+
+        private void ChangeTitleCommand()
+        {
+            Title = Title + "_1";
         }
 
         /// <summary>
@@ -110,10 +131,10 @@ namespace HotelAdvisorWinRTClientApp.ViewModel
         private async void LoadHotels()
         {
             var listOfHotels = await hotelClient.GetAll();
-            foreach (var h in listOfHotels)
-            {
-                h.Image = @"http://code9-2015-api.azurewebsites.net" + h.Image;
-            }
+            //foreach (var h in listOfHotels)
+            //{
+            //    h.Image = @"http://code9-2015-api.azurewebsites.net" + h.Image;
+            //}
             Hotels = new ObservableCollection<HotelDetailsViewModel>(listOfHotels);
         }
 

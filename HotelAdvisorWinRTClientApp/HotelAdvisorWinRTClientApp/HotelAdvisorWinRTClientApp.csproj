@@ -112,6 +112,8 @@
     <Compile Include="Components\RatingStar.xaml.cs">
       <DependentUpon>RatingStar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Converter\DecimalToDoubleConverter.cs" />
+    <Compile Include="Converter\ImagePathConverter.cs" />
     <Compile Include="LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
@@ -193,6 +195,7 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

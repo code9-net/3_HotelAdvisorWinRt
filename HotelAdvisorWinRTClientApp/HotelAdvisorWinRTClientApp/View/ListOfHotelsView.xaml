@@ -6,9 +6,15 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:cnt="using:HotelAdvisorWinRTClientApp.Components"
+    xmlns:conv="using:HotelAdvisorWinRTClientApp.Converter"
     mc:Ignorable="d"
     DataContext="{Binding ListOfHotelsView, Source={StaticResource Locator}}">
-
+    
+    <Page.Resources>
+        <conv:DecimalToDoubleConverter x:Key="DecToDouble"/>
+        <conv:ImagePathConverter x:Key="ImgPathConverter" />
+    </Page.Resources>
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50"/>
@@ -35,12 +41,21 @@
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
-                            <Image Grid.Column="0" Grid.RowSpan="4" Source="{Binding Image}"/>
+                            <Image Grid.Column="0" Grid.RowSpan="5" 
+                                   Source="{Binding Image, Converter={StaticResource ImgPathConverter}}"/>
                             <TextBlock Grid.Row="0" Grid.Column="1" Margin="10,0,20,0" Text="{Binding HotelName}" Style="{StaticResource HeaderTextBlockStyle}"/>
                             <TextBlock Grid.Row="1" Grid.Column="1" Margin="10,0,20,0" Text="{Binding City}" Style="{StaticResource SubheaderTextBlockStyle}"/>
+                            <StackPanel Grid.Column="1" Grid.Row="4" Orientation="Horizontal" >
+                                <TextBlock Text="{Binding Address}" Margin="10,0,20,0"/>
+                                <TextBlock Text="{Binding HouseNumber}" Margin="10,0,20,0"/>
+                            </StackPanel>
                             <TextBlock Grid.Row="2" Grid.Column="1" Margin="10,0,20,0" Text="{Binding Description}" Style="{StaticResource BaseTextBlockStyle}"/>
-                            <cnt:RatingControl Grid.Row="3" Grid.Column="1" NumberOfStars="5" Value="7.7"
+
+                            <cnt:RatingControl Grid.Row="3" Grid.Column="1" NumberOfStars="5"
+                                               BackgroundColor="Gray"
+                                               Value="{Binding AverageRating, Converter={StaticResource DecToDouble}}"
                                                 HorizontalAlignment="Left"
                                                 StarForegroundColor="Yellow"
                                                 StarOutlineColor="Transparent"
@@ -54,6 +69,8 @@
     <Page.BottomAppBar>
         <CommandBar>
             <AppBarButton Label="Edit the hotel" Icon="Edit"/>
+            <AppBarButton Label="Edit title0" Icon="CalendarDay" 
+                          Command="{Binding ChangeTitle}"/>
             <AppBarButton Label="Like" Icon="Like" Command="{Binding Path=LikeHotelCommand}" />
             <AppBarButton Label="Dislike" Icon="Dislike" Command="{Binding Path=DislikeHotelCommand}" />
         </CommandBar>
